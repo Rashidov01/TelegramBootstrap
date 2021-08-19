@@ -1,0 +1,13 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  background-color: #17212B;
+}
+
+.num{
+  font-size: 14px;
+}
+
+.num-item{
+  font-size: 14px;
+}
