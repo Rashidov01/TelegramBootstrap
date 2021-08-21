@@ -47,9 +47,8 @@
               </div>
 
               <div class="chat-body__bottom d-flex align-items-center">
-                <span class="chat-body__bottom-user">You:</span>
                 <p class="chat-body__bottom-text text-truncate" style="font-size: 14px;">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Developers, English movies
                 </p>
               </div>
             </div>
@@ -57,8 +56,8 @@
 
           <a class="list-group-item list-group-item-action chat-wrapper d-flex align-items-center p-2 rounded-0 border-0 active"
             href="#saved" data-toggle="tab" aria-current="true">
-            <img class="chat-wrapper__img mr-2 bg-info p-2" src="/img/saved-meassagw-white.svg" alt="" width="50"
-              height="50">
+            <img class="chat-wrapper__img mr-2 bg-info p-2" src="/img/saved-meassagw-white.svg" alt="SAVED-MESSAGE"
+              width="50" height="50">
 
             <div class="chat-body w-100">
               <div class="chat-body__top d-flex align-items-center justify-content-between">
@@ -108,14 +107,14 @@
           </a>
 
           <a class="list-group-item list-group-item-action chat-wrapper d-flex align-items-center p-2 border-0 rounded-0"
-            href="#frontend-second" aria-current="true" data-toggle="tab">
+            href="#goodies" aria-current="true" data-toggle="tab">
             <img class="chat-wrapper__img mr-2" src="/img/frontend-goodies.jpg" alt="" width="50" height="50">
 
             <div class="chat-body w-100">
               <div class="chat-body__top d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center">
                   <span><img class="mr-1" src="./img/cahnel-icon.svg" alt="" width="15" height="15"></span>
-                  <h3 class="chat-body__top-title text-truncate h6 mb-0">Frontend Bootcamp</h3>
+                  <h3 class="chat-body__top-title text-truncate h6 mb-0">Frontend Profession Goodies</h3>
                 </div>
                 <span class="chat-body__top-time" style="font-size: 14px;">
                   11:40 AM
@@ -136,7 +135,7 @@
           </a>
 
           <a class="list-group-item list-group-item-action chat-wrapper d-flex align-items-center border-0 p-2 rounded-0"
-            href="#" aria-current="true" data-toggle="tab">
+            href="#bot-chat" aria-current="true" data-toggle="tab">
             <img class="chat-wrapper__img mr-2" src="/img/Mayoq-contant.jpg" alt="" width="50" height="50">
 
             <div class="chat-body w-100">
@@ -164,7 +163,7 @@
           </a>
 
           <a class="list-group-item list-group-item-action chat-wrapper d-flex align-content-center border-0 p-2 rounded-0"
-            href="#" aria-current="true" data-toggle="tab">
+            href="#personal-chat" aria-current="true" data-toggle="tab">
             <img class="chat-wrapper__img mr-2" src="/img/ustoz.jpg" alt="" width="50" height="50">
 
             <div class="chat-body w-100">
@@ -362,7 +361,7 @@
             <div class="vh-100 d-flex flex-column">
               <div class="main-middle__heading bg-white p-2 d-flex align-items-center justify-content-between">
                 <div class="main-middle__heading-left position-relative flex-grow-1">
-                  <button class="btn btn-white stretched-link text-left outline-none p-0" type="button">
+                  <button class="btn btn-white stretched-link text-left outline-none p-0" type="button" data-target="#infoModal" data-toggle="modal">
                     <span class="h6 font-weight-bold text-dark d-block mb-0">
                       Saved Message
                     </span>
@@ -404,8 +403,214 @@
                   <img src="img/office-pin.svg" alt="pin-img" width="15" height="15">
                 </button>
               </div>
-              <div class="main-middle__middle px-4 py-2 vh-100 overflow-auto">
+
+              <div class="main-middle__middle p-2 vh-100 overflow-auto">
+                <div class="message__center message__center--open flex-grow-1">
+                  <div class="message__wrapper d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/my-picture.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative p-2">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Abdulloh</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text mr-3">
+                          Better late then never
+                        </p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper sr-only d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/my-picture.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Abdulloh</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text">Labbay?</p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/frontent-group.png" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative p-2">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Frontend Bootcamp N1 |09:00| #nt044</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text text-info">
+                          git init <br>
+                          git status <br>
+                          git add <br>
+                          git status <br>
+                          git commit -m "Birinchi qadam" <br>
+                          git status <br>
+                          git remote add origin mening_yangi_ochgan_loyiham (githubdan olinadigan address) <br>
+                          git push -u origin master.
+                        </p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper sr-only d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/my-picture.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative p-2">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Abdulloh</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text">Labbay?</p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper sr-only d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/my-picture.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative p-2">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Abdulloh</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text">Dasturlashga Oid Jumboqlar
+                          Jumboqlar yechish va dasturlash qobliyatlaringizni bir vaqtda o'stirish niyatingiz bo'lsa,
+                          pythonchallenge.com'ni sinab ko'ring.
+
+                          Bir necha yil avval ushbu saytni bir do'stim tavsiya qilgan edi, qancha tun uyqusiz o'tgandi
+                          o'shanda. Yaqinda masalalarni qaytadan o'tib chiqdim va sizga ham qiziq deb o'yladim.
+
+                          Masalalarni istalgan dasturlash tilida yechishingiz mumkin, qiynalib qolganingizda yechimlarni
+                          hackingnote.com/en/python-challenge-solutions/level-0 da topishingiz mumkin.</p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper sr-only d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/my-picture.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Abdulloh</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text">Labbay?</p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/techno.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative p-2">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Lifehack</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text">
+                          <a class="link" href="#">#lifehack</a><br>
+
+                          Chrome da fayllarni yuklashni qanday tezlashtirish mumkin? <br>
+
+                          Chrome brauzerida ko'p tarmoqli yuklab olish funktsiyasi mavjud, faqat u o'chirilgan. Qanday
+                          faollashtirish kerak: <br>
+
+                          1. Brauzeringizni ishga tushiring. <br>
+                          2. Manzil satriga yozing: <br>
+                          <a class="link" href="#">chrome://flags/#enable-parallel-downloading</a> <br>
+                          3. Parametrni "Enabled" ga o'rnating. <br>
+                          4. Brauzeringizni qayta ishga tushiring. <br>
+
+                          <a class="link" href="#">@technoflyuz</a>
+                        </p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper sr-only d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/icon-abdulloh.jpg" alt="image of Abdulloh"
+                      width="30" height="30">
+                    <div class="message__wrapper-box position-relative">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Abdulloh</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text">Labbay?</p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                </div>
               </div>
+
               <div class="main-middle__bottom bg-white p-2 d-flex align-items-center mt-auto w-100  flex-grow-1">
                 <label class="d-flex mb-0" for="file-opener">
                   <input class="form-control border-0 sr-only" id="file-opener" type="file">
@@ -431,7 +636,8 @@
             <div class="vh-100 d-flex flex-column">
               <div class="main-middle__heading bg-white p-2 d-flex align-items-center justify-content-between">
                 <div class="main-middle__heading-left position-relative flex-grow-1">
-                  <button class="btn btn-white stretched-link text-left outline-none p-0" type="button">
+                  <button class="btn btn-white stretched-link text-left outline-none p-0" type="button"
+                    data-target="#infoModal" data-toggle="modal">
                     <span class="h6 font-weight-bold text-dark d-block mb-0">
                       Frontend Bootcamp N1 |09:00| #nt044
                     </span>
@@ -476,8 +682,260 @@
                   <img src="img/office-pin.svg" alt="pin-img" width="15" height="15">
                 </button>
               </div>
-              <div class="main-middle__middle px-4 py-2 vh-100 overflow-auto">
+
+              <div class="main-middle__middle p-2 vh-100 overflow-auto">
+                <div class="message__center message__center--open flex-grow-1">
+                  <div class="message__wrapper d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/ustoz.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative p-2">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Ustoz</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text mr-3">
+                          Bolla anaqa qisa proyekti soat 16:00 da tashlashila keregidi
+                        </p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/my-picture.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Abdulloh</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text mr-3">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/nurmuhammad.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative p-2">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Nurmuhammad aka</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text mr-3">
+                          Bolla qachon obedga qachon chiqamiz.
+                        </p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">11:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper sr-only d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/my-picture.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative p-2">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Abdulloh</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text">Labbay?</p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper  d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/my-picture.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative p-2">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Abdulloh</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                          Cupiditate facilis asperiores enim ducimus quisquam provident nobis quos, laboriosam veritatis
+                          sapiente tempora autem odio quis ea amet repellendus suscipit, explicabo nulla.</p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper sr-only d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/asadbek-aka.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Asadbek aka</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text">Labbay?</p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+
+                  <div class="message__wrapper  d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/Abdulloh-aka.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative p-2">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Abdulloh aka</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                          Cupiditate facilis asperiores enim ducimus quisquam provident nobis quos, laboriosam veritatis
+                          sapiente tempora autem odio quis ea amet repellendus suscipit, explicabo nulla.</p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/asadbek-aka.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative p-2">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Asadbek aka Web</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text mr-3">
+                          Ustoz lekin proyekt dadil bolyapti
+                        </p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/Sarvar-oga.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative p-2">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Sarvar og'a</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text mr-3">
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/Sarvar-oga.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative p-2">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Sarvar og'a</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text mr-3">
+                          Ustoz man codni oxiriga yetkazguncha buzilib qoldim
+                        </p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper sr-only d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/icon-abdulloh.jpg" alt="image of Abdulloh"
+                      width="30" height="30">
+                    <div class="message__wrapper-box position-relative">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Abdulloh</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text">Labbay?</p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                </div>
               </div>
+
               <div class="main-middle__bottom bg-white p-2 d-flex align-items-center mt-auto w-100  flex-grow-1">
                 <label class="d-flex mb-0" for="file-opener">
                   <input class="form-control border-0 sr-only" id="file-opener" type="file">
@@ -499,7 +957,272 @@
             </div>
           </div>
 
-          <div class="tab-pane" id="frontend-second" role="tabpanel" aria-labelledby="list-home-list">
+          <div class="tab-pane" id="goodies" role="tabpanel" aria-labelledby="list-home-list" data-target="#infoModal" data-toggle="modal">
+            <div class="vh-100 d-flex flex-column">
+              <div class="main-middle__heading bg-white p-2 d-flex align-items-center justify-content-between">
+                <div class="main-middle__heading-left position-relative flex-grow-1">
+                  <button class="btn btn-white stretched-link text-left outline-none p-0" type="button">
+                    <span class="h6 font-weight-bold text-dark d-block mb-0 text-truncate">
+                      Frontend profession goodies
+                    </span>
+                    <span class="text-secondary" style="font-size:12px">
+                      26 members
+                    </span>
+                  </button>
+                </div>
+                <div class="main-middle__heading-right">
+                  <button class="btn btn-white p-0" type="button">
+                    <img src="img/search.svg" alt="search" width="15" height="15">
+                  </button>
+                  <button class="btn btn-white p-0 ml-2" type="button">
+                    <img src="img/voice-chat-icon.svg" alt="search" width="15" height="15">
+                  </button>
+                  <button class="btn btn-white p-0 ml-2" type="button">
+                    <img src="img/icon-sizer.svg" alt="search" width="15" height="15">
+                  </button>
+                  <button class="btn btn-white p-0 ml-2 dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="img/menu-dots.svg" alt="search" width="15" height="15">
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">View group info</a>
+                    <a class="dropdown-item" href="#">Enable notifications</a>
+                    <a class="dropdown-item" href="#">Leave group</a>
+                    <a class="dropdown-item" href="#">Clear history</a>
+                    <a class="dropdown-item" href="#">Report</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pinned-message bg-white p-2 text-left d-flex align-items-center justify-content-between">
+                <div>
+                  <h3 class="pinned-title h6 text-info m-0">
+                    Pinned Massage
+                  </h3>
+                  <p class="pinned-text text-dark text-truncate w-100 mb-0">
+                    78-dars - 18.08.2021 Bootstrap 5 da to'g'ri foydalanish va amalda qo'llash
+                  </p>
+                </div>
+                <button class="btn btn-white p-0" type="button">
+                  <img src="img/office-pin.svg" alt="pin-img" width="15" height="15">
+                </button>
+              </div>
+
+              <div class="main-middle__middle  vh-100 overflow-auto">
+                <div class="message__center message__center--open flex-grow-1 p-2">
+                  <div class="message__wrapper d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/ustoz.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative p-2">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Ustoz</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis veritatis nostrum quidem,
+                          dolore facere soluta laborum, eos minus rem, nulla voluptate quo officia perferendis. Magnam
+                          quidem perspiciatis aliquid nulla consequatur?
+                        </p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper sr-only d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/ustoz.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Ustoz</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text">Labbay?</p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/ustoz.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative p-2">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Abdulloh</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laboriosam sit ad
+                          cupiditate! Iure accusantium exercitationem beatae vitae dolor laboriosam. Esse incidunt
+                          commodi vitae debitis ea magnam atque voluptatibus iusto.
+                        </p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper sr-only d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/my-picture.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative p-2">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Abdulloh</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text">Labbay?</p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper sr-only d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/my-picture.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative p-2">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Abdulloh</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text">Dasturlashga Oid Jumboqlar
+                          Jumboqlar yechish va dasturlash qobliyatlaringizni bir vaqtda o'stirish niyatingiz bo'lsa,
+                          pythonchallenge.com'ni sinab ko'ring.
+
+                          Bir necha yil avval ushbu saytni bir do'stim tavsiya qilgan edi, qancha tun uyqusiz o'tgandi
+                          o'shanda. Yaqinda masalalarni qaytadan o'tib chiqdim va sizga ham qiziq deb o'yladim.
+
+                          Masalalarni istalgan dasturlash tilida yechishingiz mumkin, qiynalib qolganingizda yechimlarni
+                          hackingnote.com/en/python-challenge-solutions/level-0 da topishingiz mumkin.</p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper sr-only d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/my-picture.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Abdulloh</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text">Labbay?</p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/ustoz.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative p-2">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Ustoz</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maiores esse odio ex
+                          deserunt sequi quas molestias recusandae praesentium, ad, non quae facere. Aut fugiat omnis,
+                          voluptates expedita ipsam iusto.
+                        </p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper sr-only d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/icon-abdulloh.jpg" alt="image of Abdulloh"
+                      width="30" height="30">
+                    <div class="message__wrapper-box position-relative">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Abdulloh</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text">Labbay?</p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="main-middle__bottom bg-white p-2 d-flex align-items-center mt-auto w-100  flex-grow-1">
+                <label class="d-flex mb-0" for="file-opener">
+                  <input class="form-control border-0 sr-only" id="file-opener" type="file">
+                  <span class="file-opener__icon mr-1"></span>
+                </label>
+                <form class="w-100" action="https://echo.htmlacademy.ru" autocomplete="off" method="POST">
+                  <input class="main-middle__bottom-input form-control border-0 d-block stretched-link text-left"
+                    type="text" aria-lebel="send text" placeholder="Write a message...">
+                </form>
+                <div class="main-middle__bottom-btn d-flex align-items-center">
+                  <button class="btn btn-white p-0 ml-2" type="button">
+                    <img src="img/smiling-emoticon-square-face.svg" alt="smile" width="20" height="20">
+                  </button>
+                  <button class="btn btn-white p-0 ml-2" type="button">
+                    <img src="img/mic.svg" alt="smile" width="20" height="20">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="frontend-second" role="tabpanel" aria-labelledby="list-home-list" data-target="#infoModal" data-toggle="modal">
             <div class="vh-100 d-flex flex-column">
               <div class="main-middle__heading bg-white p-2 d-flex align-items-center justify-content-between">
                 <div class="main-middle__heading-left position-relative flex-grow-1">
@@ -541,7 +1264,7 @@
                     Pinned Massage
                   </h3>
                   <p class="pinned-text text-dark text-truncate w-100 mb-0">
-                    80-dars - 20.08.2021 Bootstrap 4 dan imtihon Telegram maketini 3-kun vaqt davomida tugatish
+                    79-dars Ertaga Bootstrap yordamida Telegram loyihasini 3-kun davomida tuzish
                   </p>
                 </div>
                 <button class="btn btn-white p-0" type="button">
@@ -550,6 +1273,402 @@
               </div>
               <div class="main-middle__middle px-4 py-2 vh-100 overflow-auto">
               </div>
+              <div class="main-middle__bottom bg-white p-2 d-flex align-items-center mt-auto w-100  flex-grow-1">
+                <label class="d-flex mb-0" for="file-opener">
+                  <input class="form-control border-0 sr-only" id="file-opener" type="file">
+                  <span class="file-opener__icon mr-1"></span>
+                </label>
+                <form class="w-100" action="https://echo.htmlacademy.ru" autocomplete="off" method="POST">
+                  <input class="main-middle__bottom-input form-control border-0 d-block stretched-link text-left"
+                    type="text" aria-lebel="send text" placeholder="Write a message...">
+                </form>
+                <div class="main-middle__bottom-btn d-flex align-items-center">
+                  <button class="btn btn-white p-0 ml-2" type="button">
+                    <img src="img/smiling-emoticon-square-face.svg" alt="smile" width="20" height="20">
+                  </button>
+                  <button class="btn btn-white p-0 ml-2" type="button">
+                    <img src="img/mic.svg" alt="smile" width="20" height="20">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="personal-chat" role="tabpanel" aria-labelledby="list-home-list" data-target="#infoModal" data-toggle="modal">
+            <div class="vh-100 d-flex flex-column">
+              <div class="main-middle__heading bg-white p-2 d-flex align-items-center justify-content-between">
+                <div class="main-middle__heading-left position-relative flex-grow-1">
+                  <button class="btn btn-white stretched-link text-left outline-none p-0" type="button">
+                    <span class="h6 font-weight-bold text-dark d-block mb-0 text-truncate">
+                      Ustoz
+                    </span>
+                    <span class="text-secondary" style="font-size:12px">
+                      last seen recently
+                    </span>
+                  </button>
+                </div>
+                <div class="main-middle__heading-right">
+                  <button class="btn btn-white p-0" type="button">
+                    <img src="img/search.svg" alt="search" width="15" height="15">
+                  </button>
+                  <button class="btn btn-white p-0 ml-2" type="button">
+                    <img src="img/voice-chat-icon.svg" alt="search" width="15" height="15">
+                  </button>
+                  <button class="btn btn-white p-0 ml-2" type="button">
+                    <img src="img/icon-sizer.svg" alt="search" width="15" height="15">
+                  </button>
+                  <button class="btn btn-white p-0 ml-2 dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="img/menu-dots.svg" alt="search" width="15" height="15">
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">View group info</a>
+                    <a class="dropdown-item" href="#">Enable notifications</a>
+                    <a class="dropdown-item" href="#">Leave group</a>
+                    <a class="dropdown-item" href="#">Clear history</a>
+                    <a class="dropdown-item" href="#">Report</a>
+                  </div>
+                </div>
+              </div>
+              <div class="pinned-message bg-white p-2 text-left d-flex align-items-center justify-content-between">
+                <div>
+                  <h3 class="pinned-title h6 text-info m-0">
+                    Pinned Massage
+                  </h3>
+                  <p class="pinned-text text-dark text-truncate w-100 mb-0">
+                    Abdulloh ko'pro o'zingizni ustingizda ko'proq ishlang.
+                  </p>
+                </div>
+                <button class="btn btn-white p-0" type="button">
+                  <img src="img/office-pin.svg" alt="pin-img" width="15" height="15">
+                </button>
+              </div>
+
+              <div class="main-middle__middle p-2 vh-100 overflow-auto">
+                <div class="message__center message__center--open flex-grow-1">
+                  <div class="message__wrapper d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/ustoz.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative p-2">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Ustoz</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text mr-3">
+                          Abdulloh ko'pro o'zingizni ustingizda ishlang.
+                        </p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/my-picture.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Abdulloh</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text mr-3">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/ustoz.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative p-2">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Ustoz</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text mr-3">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quo?
+                        </p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">11:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/my-picture.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative p-2">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Abdulloh</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text mr-3">Lorem ipsum dolor sit.</p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper  d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/ustoz.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative p-2">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Ustoz</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                          Cupiditate facilis asperiores enim ducimus quisquam</p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper sr-only d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/asadbek-aka.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Asadbek aka</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text">Labbay?</p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+
+                  <div class="message__wrapper  d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/ustoz.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative p-2">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Ustoz</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text">Lorem ipsum dolor sit.</p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/asadbek-aka.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative p-2">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Asadbek aka Web</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text mr-3">
+                          Ustoz lekin proyekt dadil bolyapti
+                        </p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/ustoz.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative p-2">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Ustoz</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text mr-3">
+                          Gruhdagilarga tekshirtirib feedback olin
+                        </p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/Sarvar-oga.jpg" alt="image of Abdulloh"
+                      width="35" height="35">
+                    <div class="message__wrapper-box position-relative p-2">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Sarvar og'a</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text mr-3">
+                          Codni tekshirtirdim Bemda ozgina xatolarim borakan.
+                        </p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                  <div class="message__wrapper sr-only d-flex align-items-end mb-2 mt-2">
+                    <img class="message__user-icon rounded-circle" src="img/icon-abdulloh.jpg" alt="image of Abdulloh"
+                      width="30" height="30">
+                    <div class="message__wrapper-box position-relative">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Abdulloh</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+
+                      <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                        <p class="message__wrapper-text">Labbay?</p>
+                        <div class="message__wrapper-bottom-right d-flex align-items-center">
+                          <time class="message__time" datetime="9:14">9:14 AM</time>
+                          <span class="message__status"></span>
+                        </div>
+                      </div>
+
+                      <span class="message__curve"></span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="main-middle__bottom bg-white p-2 d-flex align-items-center mt-auto w-100  flex-grow-1">
+                <label class="d-flex mb-0" for="file-opener">
+                  <input class="form-control border-0 sr-only" id="file-opener" type="file">
+                  <span class="file-opener__icon mr-1"></span>
+                </label>
+                <form class="w-100" action="https://echo.htmlacademy.ru" autocomplete="off" method="POST">
+                  <input class="main-middle__bottom-input form-control border-0 d-block stretched-link text-left"
+                    type="text" aria-lebel="send text" placeholder="Write a message...">
+                </form>
+                <div class="main-middle__bottom-btn d-flex align-items-center">
+                  <button class="btn btn-white p-0 ml-2" type="button">
+                    <img src="img/smiling-emoticon-square-face.svg" alt="smile" width="20" height="20">
+                  </button>
+                  <button class="btn btn-white p-0 ml-2" type="button">
+                    <img src="img/mic.svg" alt="smile" width="20" height="20">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bot" id="bot-chat" role="tabpanel" aria-labelledby="list-home-list" data-target="#infoModal" data-toggle="modal">
+            <div class="vh-100 d-flex flex-column">
+              <div class="main-middle__heading bg-white p-2 d-flex align-items-center justify-content-between">
+                <div class="main-middle__heading-left position-relative flex-grow-1">
+                  <button class="btn btn-white stretched-link text-left outline-none p-0" type="button">
+                    <span class="h6 font-weight-bold text-dark d-block mb-0 text-truncate">
+                      Mayoq Contant Bot
+                    </span>
+                    <span class="text-dark" style="font-size:12px">
+                      Bot
+                    </span>
+                  </button>
+                </div>
+                <div class="main-middle__heading-right">
+                  <button class="btn btn-white p-0" type="button">
+                    <img src="img/search.svg" alt="search" width="15" height="15">
+                  </button>
+                  <button class="btn btn-white p-0 ml-2" type="button">
+                    <img src="img/icon-sizer.svg" alt="search" width="15" height="15">
+                  </button>
+                  <button class="btn btn-white p-0 ml-2 dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="img/menu-dots.svg" alt="search" width="15" height="15">
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">View group info</a>
+                    <a class="dropdown-item" href="#">Enable notifications</a>
+                    <a class="dropdown-item" href="#">Leave group</a>
+                    <a class="dropdown-item" href="#">Clear history</a>
+                    <a class="dropdown-item" href="#">Report</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-middle__middle p-2 vh-100 overflow-auto">
+                <div class="message__center message__center--open text-left flex-grow-1">
+                  <div class="bot-main bg-white p-3 w-75 mx-auto rounded" style="margin-top: 14%;">
+                    <h3 class="bot-main__title h6 mb-3">What can this bot do?</h3>
+
+                    <p class="small">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. <a class="link link-primary" href="#">www.mayoq.uz</a> dolorum, autem ipsam
+                      harum. Eligendi sunt reiciendis quis ipsum necessitatibus voluptas obcaecati, quaerat non dolore
+                      modi voluptate eveniet dolorum amet asperiores? Quia assumenda ducimus praesentium nihil eius.
+                      Amet provident a enim laborum recusandae fuga quibusdam sapiente, ducimus quos vero deleniti rem
+                      repellendus ut unde, assumenda minus in labore distinctio harum repellat ex ab cum. Quod expedita
+                      libero quidem quisquam quas molestias quibusdam hic reiciendis tempora consectetur praesentium,
+                      recusandae ullam!
+                    </p>
+
+                    <span class="small">To'lov uchun karta raqami 8600 5004 7472 0964</span>
+                  </div>
+                </div>
+              </div>
+
               <div class="main-middle__bottom bg-white p-2 d-flex align-items-center mt-auto w-100  flex-grow-1">
                 <label class="d-flex mb-0" for="file-opener">
                   <input class="form-control border-0 sr-only" id="file-opener" type="file">
@@ -580,6 +1699,8 @@
 
     </div>
   </main>
+
+  <!-- Modal -->
 
   <div class="modal fade p-0" id="main-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog m-0 rounded-0">
@@ -677,6 +1798,123 @@
       </div>
     </div>
   </div>
+
+  <!-- MODAL INFO -->
+  <div class="info-modal modal fade show" id="infoModal">
+    <div class="info-modal__dialog modal-dialog">
+      <div class="info-modal__contet modal-content d-block my-3">
+        <div class="info-modal__header modal-header border-0">
+          <div class="d-flex align-items-center justify-content-between w-100">
+            <h3 class="h6 mb-0">Chanel info</h3>
+            <div class="d-flex">
+              <button class="btn btn-white p-0 ml-2 dropdown-toggle" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="img/menu-dots.svg" alt="search" width="15" height="15">
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">View group info</a>
+              <a class="dropdown-item" href="#">Enable notifications</a>
+              <a class="dropdown-item" href="#">Leave group</a>
+              <a class="dropdown-item" href="#">Clear history</a>
+              <a class="dropdown-item" href="#">Report</a>
+            </div>
+              <button type="button" class="close text-secondary" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="modal__top d-flex p-3 align-items-center">
+          <img class="rounded-circle" src="img/frontent-group.png" alt="frontend photo" width="65" height="65">
+          <div class="ml-3">
+            <h3 class="h6 mb-0">Frontend Bootcamp</h3>
+            <span class="text-secondary">21 members</span>
+          </div>
+        </div>
+
+        <label class="notification__modal m-0 d-flex align-items-center justify-content-between p-2 px-4"
+          for="adminControl">
+          <div class="d-flex align-items-center">
+            <h5 class="mb-0 text-dark h6">Notifications</h5>
+          </div>
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="adminControl">
+            <label class="custom-control-label" for="adminControl"></label>
+          </div>
+        </label>
+
+        <div class="info-modal__list modal-body border-0">
+          <div class="list-group">
+            <a href="#"
+              class="sitebar sitebar--photo list-group-item list-group-item-action border-0 p-2 pt-1 d-flex align-items-center"
+              aria-current="true">
+              <span class="sitebar__number">101</span> Photos</a>
+            <a href="#"
+              class="sitebar sitebar--video list-group-item list-group-item-action border-0 p-2 pt-1 d-flex align-items-center"><span
+                class="sitebar__number">7</span> Videos</a>
+            <a href="#"
+              class="sitebar sitebar--link list-group-item list-group-item-action border-0 p-2 pt-1 d-flex align-items-center"><span
+                class="sitebar__number">23</span> Shared links</a>
+            <a href="#"
+              class="sitebar sitebar--voice list-group-item list-group-item-action border-0 p-2 pt-1 d-flex align-items-center"><span
+                class="sitebar__number">42</span> voice messages</a>
+            <a href="#"
+              class="sitebar sitebar--gif list-group-item list-group-item-action border-0 p-2 pt-1 d-flex align-items-center"><span
+                class="sitebar__number">137</span> GIFs</a>
+          </div>
+        </div>
+
+        <div class="modal-footer d-block">
+          <div class="d-flex justify-content-between align-items-center p-2 px-1 mb-2">
+            <button class="modal-icon__btn-person btn d-flex p-0">
+              24 MEMBERS
+            </button>
+            <button class="modal-btn__userplus btn" aria-hidden="true"></button>
+          </div>
+          <div class="list-group">
+            <a class="list-group-item p-0 px-1 border-0 text-decoration-none text-dark mb-2" href="#">
+              <div class="d-flex">
+                <img class="rounded-circle" src="img/Sarvar-oga.jpg" alt="icon avatar" width="40" height="40">
+                <div class="ml-3">
+                  <h3 class="h6 mb-0">Sarvar og'a</h3>
+                  <span class="status text-primary">Online</span>
+                </div>
+              </div>
+            </a>
+            <a class="list-group-item  p-0 px-1 border-0 text-decoration-none text-dark mb-2" href="#">
+              <div class="d-flex">
+                <img class="rounded-circle" src="img/my-picture.jpg" alt="abdulloh icon" width="40" height="40">
+                <div class="ml-3">
+                  <h3 class="h6 mb-0">Abdulloh</h3>
+                  <span class="status text-secondary">Last seen racendly</span>
+                </div>
+              </div>
+            </a>
+            <a class="list-group-item p-0 px-1 border-0 text-decoration-none text-dark mb-2" href="#">
+              <div class="d-flex">
+                <img class="rounded-circle" src="img/asadbek-aka.jpg" alt="icon avatar" width="40" height="40">
+                <div class="ml-3">
+                  <h3 class="h6 mb-0">Asadbek</h3>
+                  <span class="status text-primary">Online</span>
+                </div>
+              </div>
+            </a>
+            <a class="list-group-item  p-0 px-1 border-0 text-decoration-none text-dark mb-2" href="#">
+              <div class="d-flex">
+                <img class="rounded-circle" src="img/Abdulloh-aka.jpg" alt="abdulloh icon" width="40" height="40">
+                <div class="ml-3">
+                  <h3 class="h6 mb-0">Abdulloh</h3>
+                  <span class="status text-secondary">Last seen racendly</span>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
