@@ -124,6 +124,7 @@
   background-position: center center;
   background-size: cover;
   width: 100%;
+  border-right: 1px solid #d1d1d1;
 }
 
 .main-middle__heading{
@@ -283,7 +284,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .main-middle__middle::-webkit-scrollbar {
-  width: 4px;
+  width: 2px;
 }
 
 .main-middle__middle::-webkit-scrollbar-track {
@@ -302,7 +303,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .info-modal::-webkit-scrollbar {
-  width: 4px;
+  width: 2px;
 }
 
 .info-modal::-webkit-scrollbar-track {
@@ -316,11 +317,28 @@ body::-webkit-scrollbar-thumb {
   background-color: #d1d1d1;
 }
 
-.info-modal{
+.main-left{
   scrollbar-width: thin;
 }
 
+.main-left::-webkit-scrollbar {
+  width: 2px;
+}
 
+.main-left::-webkit-scrollbar-track {
+  background-color: #e9e9e9;
+  border-radius: 5px;
+}
+
+.main-left::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: #d1d1d1;
+}
+
+.main-left{
+  scrollbar-width: thin;
+}
 /* INFO MODAL */
 
 
@@ -378,49 +396,6 @@ body::-webkit-scrollbar-thumb {
   background-repeat: no-repeat;
 }
 
-.sitebar--notification{
-  display: flex;
-}
-
-.sitebar--notification::before {
-  background-image: url("../img/notifications-bell-button.svg");
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-}
-
-.sitebar--photo{
-  display: flex;
-}
-
-.sitebar--photo::before {
-  background-image: url("../img/video-camera.svg");
-  width: 20px;
-  height: 20px;
-}
-
-.sitebar--video::before {
-  background-image: url("../img/video-icon.svg");
-  width: 20px;
-  height: 20px;
-}
-
-.sitebar--link::before {
-  background-image: url("../img/link-icon.svg");
-}
-
-.sitebar--voice::before {
-  background-image: url("../img/voice-icon.svg");
-}
-
-.sitebar--gif::before {
-  background-image: url("../img/gif-icon.svg");
-}
-
-.sitebar{
-  padding: 12px 30px !important;
-}
-
 .modal-icon__btn-person::before {
   display: block;
   content: "";
@@ -428,12 +403,12 @@ body::-webkit-scrollbar-thumb {
   height: 20px;
   background-image: url("../img/group-icon.svg");
   background-repeat: no-repeat;
-  margin-right: 14px;
+  margin-right: 20px;
 }
 
 .modal-btn__userplus {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background-image: url("../img/search.svg");
   background-repeat: no-repeat;
 }
@@ -454,4 +429,5 @@ body::-webkit-scrollbar-thumb {
 .sitebar__number{
   width: 30px;
   margin-right: 10px;
+  font-size: 14px;
 }
