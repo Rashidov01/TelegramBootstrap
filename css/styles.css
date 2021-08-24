@@ -73,14 +73,10 @@
   margin-right: 4px;
 }
 
-.modal-account__content{
+.modal-dialog.modal-account__dialog{
   width: 350px;
-  margin: auto;
-}
-
-.modal-account{
-  padding-left: 520px;
-  padding-top: 140px;
+  margin: auto !important;
+  padding-top: 10%;
 }
 
 .modal-dialog{
@@ -466,9 +462,9 @@ body::-webkit-scrollbar-thumb {
   border: none;
 }
 
-.nav-link.active{
+.nav-link__sticker.active{
   border: none;
-  border-bottom: 1px solid dodgerblue !important;
+  border-bottom: 3px solid dodgerblue !important;
 }
 
 /* EMOJI */
@@ -483,7 +479,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .emoji-nav__link{
-  padding: 25px 0;
+  padding: 18px 0;
 }
 
 .item-emoji-icon{

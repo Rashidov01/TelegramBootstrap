@@ -8,3 +8,4 @@ stickerOpener.addEventListener('click', ()=> {
 
 
 
+
